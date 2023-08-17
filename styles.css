@@ -1,0 +1,164 @@
+html {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  width: 100%;
+  font-family: sans-serif;
+  color: #020202;
+  background-image: linear-gradient(#ffffff 124px, #058294);
+}
+
+body {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 124px;
+}
+
+header a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#header-logo-title {
+  flex: 2;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3px;
+  height: 100%;
+}
+
+/* #logo {
+    height: 70px;
+    aspect-ratio: 1106 / 1754;
+}
+
+ h1 {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    line-height: 1;
+    color: #058294;
+}
+
+#title-uoft {
+    color: #ffffff;
+    font-size: 22px;
+    background-color: #058294;
+    border: 0;
+    border-radius: 12px;
+    margin-top: 2px;
+    padding: 2px 0;
+} */
+
+#logo {
+  height: 72px;
+  aspect-ratio: 1106 / 1754;
+}
+
+h1 {
+  font-family: "Roboto Slab", serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1;
+}
+
+#title-altruism {
+  font-weight: 400;
+}
+
+#title-uoft {
+  color: #058294;
+}
+
+nav {
+  flex: 5;
+  font-family: Roboto, sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+.hover-animate-blue:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+#main-pages {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.subpages {
+  display: none;
+}
+
+#get-involved {
+  padding: 3px 10px;
+  border: 0;
+  border-radius: 15.5px;
+  background-color: #058294;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+#get-involved-arrow {
+  display: flex;
+  height: 12px;
+  width: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hover-animate-blue {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-animate-blue:hover {
+  color: #058294;
+}
+
+.hover-animate-blue::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #058294;
+  transform-origin: bottom right;
+  transition: transform 0.35s ease-out;
+}
+
+#get-involved:hover {
+  background-color: hsl(188, 93%, 35%);
+}
+
+main {
+  /* background-color: #058294; */
+  width: 100%;
+  height: calc(100vh - 124px);
+}
