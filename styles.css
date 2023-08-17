@@ -11,6 +11,11 @@ html {
 }
 
 body {
+  margin: 0;
+}
+
+header,
+main {
   max-width: 70%;
   margin: 0 auto;
 }
@@ -18,7 +23,7 @@ body {
 header {
   display: flex;
   align-items: center;
-  height: 124px;
+  height: calc(72px + 2.5em);
 }
 
 header a {
@@ -91,10 +96,14 @@ nav {
 }
 
 nav ul {
+  font-size: 24px;
+}
+
+nav ul,
+footer ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  font-size: 24px;
 }
 
 .hover-animate-blue:hover:after {
@@ -113,9 +122,9 @@ nav ul {
 }
 
 #get-involved {
-  padding: 3px 10px;
+  padding: 6px 15px;
   border: 0;
-  border-radius: 15.5px;
+  border-radius: 20.5px;
   background-color: #058294;
   color: #ffffff;
   display: flex;
@@ -146,10 +155,11 @@ nav ul {
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 2px;
+  height: 0;
   bottom: 0;
   left: 0;
-  background-color: #058294;
+  border: 1.5px solid #058294;
+  border-radius: 1.5px;
   transform-origin: bottom right;
   transition: transform 0.35s ease-out;
 }
